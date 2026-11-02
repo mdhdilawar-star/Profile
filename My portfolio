@@ -1,0 +1,1972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muhammad Dilawar - Full-Stack PHP Web Developer, Software Engineer, MySQL Architect, JavaScript & CSS3 Expert, and Excel Automation Specialist.">
+    <meta name="keywords" content="Muhammad Dilawar, Full-Stack PHP Developer, Custom PHP Architecture, Software Engineer, Vehari, Pakistan, Adveie, PakistanMart, Online Free Tools, Open Learning LMS, Excel Automation">
+    <meta name="author" content="Muhammad Dilawar">
+    <meta property="og:title" content="Muhammad Dilawar | Full-Stack PHP Developer & Software Engineer">
+    <meta property="og:description" content="Custom Full-Stack PHP Architecture, MySQL Database Design, SaaS Platforms, E-Commerce & Enterprise Data Automation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://veharimart.adveie.com/portfolio/index.html">
+    <meta property="og:image" content="1786286796816.png">
+    <title>Muhammad Dilawar | Full-Stack PHP Developer & Software Engineer</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚡</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        :root {
+            --bg-deep: #030308;
+            --bg-primary: #070810;
+            --bg-secondary: #0a0d18;
+            --bg-card: #0e1122;
+            --glass-bg: rgba(12, 15, 28, 0.78);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-border-hover: rgba(240, 200, 80, 0.45);
+            --royal-blue: #1a56db;
+            --cyan: #06b6d4;
+            --emerald: #10b981;
+            --purple: #8b5cf6;
+            --neon-cyan: #00e5ff;
+            --neon-purple: #b388ff;
+            --gold: #d4af37;
+            --gold-bright: #f0c850;
+            --orange: #f59e0b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #b0b3c0;
+            --text-muted: #7a7d8c;
+            --white: #ffffff;
+            --shadow-glow-gold: 0 0 60px rgba(212, 175, 55, 0.45);
+            --profile-size-hero: 265px;
+            --profile-size-about: 205px;
+            --profile-size-contact: 155px;
+            --profile-size-floating: 64px;
+            --profile-radius: 50%;
+            --profile-glow-color-1: rgba(212, 175, 55, 0.75);
+            --profile-glow-color-2: rgba(6, 182, 212, 0.55);
+            --profile-golden-border: rgba(240, 200, 80, 0.85);
+            --profile-border-width: 4px;
+            --profile-shadow-depth: 0 35px 90px rgba(0, 0, 0, 0.85);
+            --profile-animation-speed: 8s;
+            --profile-breathing-speed: 5s;
+            --profile-hover-scale: 1.08;
+            --radius-sm: 14px;
+            --radius-md: 20px;
+            --radius-lg: 28px;
+            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-smooth: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-bounce: 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+            --font-display: 'Space Grotesk', 'Outfit', sans-serif;
+            --font-body: 'Inter', 'Plus Jakarta Sans', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            --z-loader: 10000;
+            --z-nav: 1000;
+            --z-floating-card: 900;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(212, 175, 55, 0.6) transparent;
+            font-size: 16px;
+        }
+        ::-webkit-scrollbar {
+            width: 7px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #030308;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, var(--gold), var(--cyan), var(--gold));
+            border-radius: 10px;
+        }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-deep);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            position: relative;
+        }
+
+        /* ========== AMBIENT LUXURY AURORA ========== */
+        .aurora-bg {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .aurora-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(130px);
+            opacity: 0.22;
+            animation: orbFloat 18s ease-in-out infinite alternate;
+        }
+        .aurora-orb.orb-1 {
+            width: 520px;
+            height: 520px;
+            background: radial-gradient(circle, var(--gold-bright), transparent 70%);
+            top: -120px;
+            left: -120px;
+        }
+        .aurora-orb.orb-2 {
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--cyan), transparent 70%);
+            bottom: -150px;
+            right: -120px;
+            animation-delay: -6s;
+        }
+        .aurora-orb.orb-3 {
+            width: 450px;
+            height: 450px;
+            background: radial-gradient(circle, var(--purple), transparent 70%);
+            top: 40%;
+            left: 55%;
+            animation-delay: -11s;
+        }
+        @keyframes orbFloat {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(60px, -50px) scale(1.18); }
+        }
+
+        /* ========== LOADER ========== */
+        #loader {
+            position: fixed;
+            inset: 0;
+            z-index: var(--z-loader);
+            background: radial-gradient(ellipse at center, #0a0b18 0%, #030308 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+        #loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .loader-core {
+            width: 42px;
+            height: 42px;
+            background: radial-gradient(circle, #ffffff, var(--gold-bright));
+            border-radius: 50%;
+            box-shadow: 0 0 70px var(--gold-bright), 0 0 140px rgba(212, 175, 55, 0.8);
+            animation: corePulse 1.5s ease-in-out infinite;
+            margin-bottom: 30px;
+        }
+        @keyframes corePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.35); }
+        }
+        .loader-text {
+            font-family: var(--font-display);
+            font-size: 1.45rem;
+            font-weight: 800;
+            letter-spacing: 0.25em;
+            background: linear-gradient(135deg, var(--gold-bright), var(--cyan), var(--purple), var(--emerald));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* ========== 3D BACKGROUND ========== */
+        #three-bg {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* ========== LIGHTNING & GLASS SHARDS ========== */
+        .lightning-flash {
+            position: fixed;
+            inset: 0;
+            z-index: 9998;
+            pointer-events: none;
+            animation: lightningBurst 0.4s ease-out forwards;
+        }
+        @keyframes lightningBurst {
+            0% { background: rgba(255, 255, 255, 0.65); }
+            20% { background: rgba(240, 200, 80, 0.25); }
+            100% { background: rgba(255, 255, 255, 0); }
+        }
+        .lightning-bolt {
+            position: fixed;
+            z-index: 9999;
+            pointer-events: none;
+            height: 180px;
+            width: 3px;
+            background: linear-gradient(to bottom, #ffffff, #f0c850, #00e5ff);
+            border-radius: 2px;
+            filter: blur(0.5px);
+            box-shadow: 0 0 20px #fff, 0 0 60px #f0c850, 0 0 100px #d4af37;
+            animation: boltStrike 0.45s ease-out forwards;
+            transform-origin: top center;
+        }
+        @keyframes boltStrike {
+            0% { opacity: 1; transform: scaleY(0); }
+            20% { opacity: 1; transform: scaleY(1.2); }
+            100% { opacity: 0; transform: scaleY(1); }
+        }
+        .glass-shards-container {
+            position: fixed;
+            pointer-events: none;
+            z-index: 10000;
+        }
+        .shard-piece {
+            position: absolute;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(240, 200, 80, 0.7));
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            animation: shardExplode 0.75s ease-out forwards;
+        }
+        @keyframes shardExplode {
+            0% { transform: translate(0, 0) rotate(0deg) scale(1); opacity: 1; }
+            100% { transform: translate(var(--sx), var(--sy)) rotate(var(--sr)) scale(0.15); opacity: 0; }
+        }
+
+        /* ========== NAVIGATION ========== */
+        .nav {
+            position: fixed;
+            top: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: var(--z-nav);
+            background: rgba(8, 10, 20, 0.85);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(240, 200, 80, 0.22);
+            border-radius: 60px;
+            padding: 8px 12px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            box-shadow: 0 15px 55px rgba(0, 0, 0, 0.75), 0 0 30px rgba(212, 175, 55, 0.12);
+        }
+        .nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 0.82rem;
+            padding: 9px 16px;
+            border-radius: 30px;
+            transition: all var(--transition-fast);
+            white-space: nowrap;
+        }
+        .nav a:hover,
+        .nav a.active {
+            color: #05050a;
+            background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+            box-shadow: 0 0 20px rgba(240, 200, 80, 0.5);
+        }
+
+        /* ========== PHOTO UPLOADER TRIGGER ========== */
+        .photo-customizer-btn {
+            position: fixed;
+            top: 22px;
+            right: 24px;
+            z-index: var(--z-nav);
+            background: rgba(12, 15, 28, 0.88);
+            backdrop-filter: blur(25px);
+            border: 1px solid rgba(240, 200, 80, 0.45);
+            color: var(--gold-bright);
+            padding: 10px 18px;
+            border-radius: 40px;
+            font-family: var(--font-display);
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            transition: all var(--transition-smooth);
+        }
+        .photo-customizer-btn:hover {
+            background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+            color: #05050a;
+            box-shadow: 0 0 30px rgba(240, 200, 80, 0.6);
+            transform: translateY(-2px);
+        }
+
+        /* ========== SECTIONS ========== */
+        .section {
+            position: relative;
+            z-index: 2;
+            padding: 110px 24px;
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+        .section-label {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--gold-bright);
+            margin-bottom: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 18px;
+            border-radius: 28px;
+            background: rgba(212, 175, 55, 0.12);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 4.8vw, 3.3rem);
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+        .section-title .title-accent {
+            background: linear-gradient(135deg, var(--gold-bright), var(--cyan), var(--purple), var(--emerald));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 300% 300%;
+            animation: gradientShift 5s ease infinite;
+        }
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        /* ========== LUXURY PROFILE IMAGE FRAMES ========== */
+        .profile-img-wrapper {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            cursor: pointer;
+            transition: transform var(--transition-bounce);
+            filter: drop-shadow(0 0 35px rgba(212, 175, 55, 0.45));
+        }
+        .profile-img-wrapper:hover {
+            transform: scale(var(--profile-hover-scale));
+            filter: drop-shadow(0 0 55px rgba(240, 200, 80, 0.75));
+        }
+        .profile-img-ring {
+            position: absolute;
+            border-radius: 50%;
+            border: 2.5px solid transparent;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            animation: ringRotate var(--profile-animation-speed) linear infinite;
+        }
+        .profile-img-ring.ring-1 {
+            width: calc(100% + 28px);
+            height: calc(100% + 28px);
+            border-top-color: var(--gold-bright);
+            border-left-color: rgba(6, 182, 212, 0.6);
+            animation-duration: 9s;
+        }
+        .profile-img-ring.ring-2 {
+            width: calc(100% + 48px);
+            height: calc(100% + 48px);
+            border-bottom-color: var(--gold);
+            border-right-color: rgba(139, 92, 246, 0.6);
+            animation-duration: 13s;
+            animation-direction: reverse;
+        }
+        @keyframes ringRotate {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+        .profile-img-glow {
+            position: absolute;
+            width: calc(100% + 90px);
+            height: calc(100% + 90px);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            background: radial-gradient(circle, var(--profile-glow-color-1) 0%, var(--profile-glow-color-2) 45%, transparent 72%);
+            animation: glowBreathe var(--profile-breathing-speed) ease-in-out infinite;
+            filter: blur(32px);
+        }
+        @keyframes glowBreathe {
+            0%, 100% { opacity: 0.65; transform: translate(-50%, -50%) scale(0.98); }
+            50% { opacity: 1; transform: translate(-50%, -50%) scale(1.18); }
+        }
+        .profile-img {
+            display: block;
+            border-radius: var(--profile-radius);
+            object-fit: cover;
+            object-position: center 18%;
+            aspect-ratio: 1/1;
+            border: var(--profile-border-width) solid var(--profile-golden-border);
+            box-shadow: var(--profile-shadow-depth), 0 0 45px rgba(212, 175, 55, 0.55);
+            z-index: 2;
+            animation: profileFloat 6s ease-in-out infinite;
+            background: linear-gradient(135deg, #121629, #090b14);
+        }
+        @keyframes profileFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-14px); }
+        }
+        .profile-img.hero-size { width: var(--profile-size-hero); height: var(--profile-size-hero); }
+        .profile-img.about-size { width: var(--profile-size-about); height: var(--profile-size-about); }
+        .profile-img.contact-size { width: var(--profile-size-contact); height: var(--profile-size-contact); }
+        .profile-img.floating-size { width: var(--profile-size-floating); height: var(--profile-size-floating); animation: none; border-width: 2.5px; }
+
+        .status-badge {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            z-index: 4;
+            background: rgba(6, 12, 24, 0.92);
+            border: 1.5px solid var(--emerald);
+            color: var(--white);
+            padding: 5px 12px;
+            border-radius: 30px;
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 5px 20px rgba(16, 185, 129, 0.4);
+        }
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--emerald);
+            box-shadow: 0 0 10px var(--emerald);
+            animation: pulseDot 1.5s infinite;
+        }
+        @keyframes pulseDot {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.4); opacity: 0.6; }
+        }
+
+        /* ========== HERO ========== */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 140px 24px 90px;
+        }
+        .hero-container {
+            max-width: 1020px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .luxury-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 22px;
+            border-radius: 50px;
+            background: rgba(240, 200, 80, 0.1);
+            border: 1px solid rgba(240, 200, 80, 0.35);
+            color: var(--gold-bright);
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            letter-spacing: 0.08em;
+            margin-top: 8px;
+        }
+        .hero-name {
+            font-family: var(--font-display);
+            font-size: clamp(2.8rem, 7vw, 5.2rem);
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1.1;
+        }
+        .hero-name .highlight {
+            background: linear-gradient(135deg, var(--gold-bright), var(--cyan), var(--purple), var(--emerald));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientShift 5s ease infinite;
+            background-size: 300% 300%;
+        }
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.05rem, 2.2vw, 1.42rem);
+            font-weight: 600;
+            color: var(--text-primary);
+            max-width: 850px;
+        }
+        .hero-typing {
+            font-family: var(--font-mono);
+            font-size: 1.05rem;
+            color: var(--gold-bright);
+            min-height: 32px;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 6px 20px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .hero-summary {
+            color: var(--text-secondary);
+            font-size: 1.04rem;
+            max-width: 820px;
+            line-height: 1.85;
+        }
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        /* ========== BUTTONS ========== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: 55px;
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            cursor: pointer;
+            border: 1px solid var(--glass-border);
+            transition: all var(--transition-bounce);
+            background: var(--glass-bg);
+            backdrop-filter: blur(25px);
+            color: var(--white);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+        .btn:hover {
+            border-color: var(--gold-bright);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-glow-gold), 0 18px 50px rgba(0, 0, 0, 0.65);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #b8860b, var(--gold-bright), #d97706);
+            color: #05050a;
+            font-weight: 700;
+            border-color: transparent;
+        }
+        .btn-primary:hover {
+            color: #000;
+            box-shadow: 0 0 45px rgba(240, 200, 80, 0.8);
+        }
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #059669, #10b981);
+            border-color: transparent;
+            color: var(--white);
+        }
+
+        /* ========== GLASS CARD & CLAY ICON ========== */
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(35px);
+            -webkit-backdrop-filter: blur(35px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            transition: all var(--transition-smooth);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+            position: relative;
+            overflow: hidden;
+        }
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold-bright), var(--cyan), transparent);
+            transition: left 0.8s ease;
+        }
+        .glass-card:hover::before {
+            left: 100%;
+        }
+        .glass-card:hover {
+            border-color: var(--glass-border-hover);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.75), 0 0 40px rgba(212, 175, 55, 0.22);
+            transform: translateY(-7px);
+        }
+        .clay-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            background: linear-gradient(145deg, #1e2235, #101320);
+            box-shadow: 6px 6px 14px #06080e, -6px -6px 14px #1e2436, inset 1px 1px 3px rgba(240, 200, 80, 0.2);
+            transition: all var(--transition-smooth);
+            flex-shrink: 0;
+        }
+        .clay-icon i {
+            background: linear-gradient(135deg, var(--gold-bright), var(--cyan), var(--purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* ========== STATS ========== */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 22px;
+            margin: 45px 0 10px;
+        }
+        .stat-card {
+            text-align: center;
+            padding: 32px 22px;
+            border-radius: var(--radius-lg);
+            background: rgba(14, 18, 32, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            transition: all var(--transition-smooth);
+        }
+        .stat-card:hover {
+            border-color: var(--gold-bright);
+            box-shadow: 0 0 45px rgba(212, 175, 55, 0.28);
+            transform: translateY(-8px);
+        }
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 3.1rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--gold-bright), var(--cyan), var(--purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* ========== LIVE PROJECTS SHOWCASE ========== */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 26px;
+        }
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            text-decoration: none;
+            color: inherit;
+        }
+        .project-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        .project-badge {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            padding: 5px 12px;
+            border-radius: 20px;
+            background: rgba(240, 200, 80, 0.14);
+            color: var(--gold-bright);
+            border: 1px solid rgba(240, 200, 80, 0.3);
+            white-space: nowrap;
+        }
+        .project-title {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 6px;
+        }
+        .project-url {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--cyan);
+            margin-bottom: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            word-break: break-all;
+        }
+        .project-desc {
+            color: var(--text-secondary);
+            font-size: 0.92rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: auto;
+        }
+        .project-tag {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            padding: 4px 11px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* ========== WHY WORK WITH ME ========== */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 30px;
+        }
+
+        /* ========== PROPOSALS & PITCH HUB ========== */
+        .proposal-tabs {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 26px;
+            flex-wrap: wrap;
+        }
+        .tab-btn {
+            padding: 13px 26px;
+            border-radius: 40px;
+            background: rgba(15, 19, 34, 0.85);
+            border: 1px solid var(--glass-border);
+            color: var(--text-secondary);
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .tab-btn.active,
+        .tab-btn:hover {
+            background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+            color: #05050a;
+            border-color: transparent;
+            box-shadow: 0 0 30px rgba(240, 200, 80, 0.45);
+        }
+        .proposal-panel {
+            display: none;
+        }
+        .proposal-panel.active {
+            display: block;
+            animation: fadeInPanel 0.4s ease;
+        }
+        @keyframes fadeInPanel {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .proposal-box {
+            background: rgba(6, 8, 16, 0.9);
+            border: 1px solid rgba(240, 200, 80, 0.28);
+            border-radius: var(--radius-md);
+            padding: 28px;
+            font-family: var(--font-body);
+            color: var(--text-primary);
+            white-space: pre-wrap;
+            line-height: 1.8;
+            font-size: 0.94rem;
+            max-height: 540px;
+            overflow-y: auto;
+        }
+        .proposal-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+
+        /* ========== SKILLS ========== */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 26px;
+        }
+        .skill-item {
+            margin-bottom: 18px;
+        }
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+        }
+        .skill-bar {
+            height: 10px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 14px;
+            overflow: hidden;
+        }
+        .skill-fill {
+            height: 100%;
+            border-radius: 14px;
+            background: linear-gradient(90deg, var(--gold-bright), var(--cyan), var(--purple), var(--emerald));
+            transition: width 1.8s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 18px rgba(212, 175, 55, 0.5);
+            background-size: 300% 100%;
+            animation: skillShimmer 3.5s ease infinite;
+        }
+        @keyframes skillShimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        .skill-experience-note {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 18px;
+            line-height: 1.65;
+        }
+
+        /* ========== TIMELINE ========== */
+        .timeline {
+            position: relative;
+            padding-left: 46px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 18px;
+            top: 12px;
+            bottom: 12px;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--gold-bright), var(--cyan), var(--purple), var(--emerald));
+            border-radius: 3px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 45px;
+            padding-left: 28px;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -38px;
+            top: 18px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--gold-bright);
+            box-shadow: 0 0 25px var(--gold-bright);
+            z-index: 2;
+            border: 3px solid var(--bg-deep);
+        }
+        .timeline-content h3 {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 6px;
+        }
+        .timeline-place {
+            color: var(--gold-bright);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .timeline-duration {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--cyan);
+            margin: 6px 0 14px;
+            display: inline-block;
+            padding: 4px 14px;
+            background: rgba(6, 182, 212, 0.1);
+            border: 1px solid rgba(6, 182, 212, 0.25);
+            border-radius: 18px;
+        }
+        .timeline-content ul {
+            list-style: none;
+        }
+        .timeline-content ul li {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            padding: 5px 0 5px 22px;
+            position: relative;
+        }
+        .timeline-content ul li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--gold-bright);
+        }
+
+        /* ========== CONTACT ========== */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+            gap: 20px;
+        }
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding: 24px;
+            text-decoration: none;
+            color: inherit;
+        }
+        .contact-card .icon-wrap {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.35rem;
+            background: rgba(240, 200, 80, 0.1);
+            color: var(--gold-bright);
+            border: 1px solid rgba(240, 200, 80, 0.3);
+            flex-shrink: 0;
+            transition: all var(--transition-smooth);
+        }
+        .contact-card:hover .icon-wrap {
+            background: var(--gold-bright);
+            color: #05050a;
+            box-shadow: 0 0 30px rgba(240, 200, 80, 0.6);
+        }
+
+        /* ========== FLOATING CARD ========== */
+        .floating-profile-card {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            z-index: var(--z-floating-card);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: rgba(8, 10, 20, 0.92);
+            backdrop-filter: blur(35px);
+            border: 1px solid rgba(240, 200, 80, 0.35);
+            border-radius: 65px;
+            padding: 8px 22px 8px 8px;
+            box-shadow: 0 18px 50px rgba(0, 0, 0, 0.75);
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            transition: all var(--transition-smooth);
+        }
+        .floating-profile-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--gold-bright);
+            box-shadow: 0 22px 65px rgba(0, 0, 0, 0.85), 0 0 45px rgba(240, 200, 80, 0.4);
+        }
+        .fp-name {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 0.88rem;
+            color: var(--white);
+            display: block;
+        }
+        .fp-role {
+            font-size: 0.68rem;
+            color: var(--gold-bright);
+            font-family: var(--font-mono);
+        }
+
+        /* ========== FOOTER & BACK TO TOP ========== */
+        .footer {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 55px 24px 90px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(4, 5, 12, 0.85);
+        }
+        .footer .social-links {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-bottom: 22px;
+            flex-wrap: wrap;
+        }
+        .footer .social-links a {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--glass-border);
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            transition: all var(--transition-smooth);
+            text-decoration: none;
+        }
+        .footer .social-links a:hover {
+            border-color: var(--gold-bright);
+            color: #05050a;
+            background: var(--gold-bright);
+            box-shadow: 0 0 30px rgba(240, 200, 80, 0.6);
+            transform: translateY(-5px);
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: rgba(12, 15, 28, 0.9);
+            backdrop-filter: blur(25px);
+            border: 1px solid rgba(240, 200, 80, 0.4);
+            color: var(--gold-bright);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all var(--transition-smooth);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(30px);
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .back-to-top:hover {
+            background: var(--gold-bright);
+            color: #05050a;
+            box-shadow: 0 0 35px rgba(240, 200, 80, 0.65);
+            transform: translateY(-6px);
+        }
+
+        @media (max-width: 900px) {
+            .nav {
+                top: auto;
+                bottom: 14px;
+                left: 10px;
+                right: 10px;
+                transform: none;
+                overflow-x: auto;
+                justify-content: flex-start;
+                padding: 8px 10px;
+            }
+            .floating-profile-card {
+                display: none;
+            }
+            .photo-customizer-btn {
+                top: 14px;
+                right: 14px;
+                padding: 8px 14px;
+                font-size: 0.72rem;
+            }
+            .back-to-top {
+                bottom: 85px;
+                right: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-core"></div>
+        <div class="loader-text">MUHAMMAD DILAWAR</div>
+    </div>
+
+    <!-- AMBIENT LUXURY AURORA & 3D CANVAS -->
+    <div class="aurora-bg">
+        <div class="aurora-orb orb-1"></div>
+        <div class="aurora-orb orb-2"></div>
+        <div class="aurora-orb orb-3"></div>
+    </div>
+    <canvas id="three-bg"></canvas>
+
+    <!-- INSTANT PHOTO UPLOADER FOR PERSISTENT LOCAL PREVIEW -->
+    <input type="file" id="profileUploadInput" accept="image/*" style="display:none;">
+    <button class="photo-customizer-btn" onclick="document.getElementById('profileUploadInput').click()" title="Select your profile photo to embed & save permanently in browser">
+        <i class="fas fa-camera-retro"></i> Set Your Photo
+    </button>
+
+    <!-- NAVIGATION -->
+    <nav class="nav" id="navbar">
+        <a href="#home" class="active" data-section="home">Home</a>
+        <a href="#projects" data-section="projects">Live Projects</a>
+        <a href="#skills" data-section="skills">Tech Stack</a>
+        <a href="#proposals" data-section="proposals">Proposals & Pitch</a>
+        <a href="#about" data-section="about">About</a>
+        <a href="#experience" data-section="experience">Experience</a>
+        <a href="#contact" data-section="contact">Contact</a>
+    </nav>
+
+    <!-- FLOATING MINI PROFILE CARD -->
+    <a href="#home" class="floating-profile-card" id="floatingProfileCard">
+        <div class="profile-img-wrapper">
+            <img src="1786286796816.png" data-fallback="https://adveie.com/uploads/profile/dilawar.jpg" alt="Muhammad Dilawar" class="profile-img floating-size user-profile-photo">
+        </div>
+        <div class="fp-info">
+            <span class="fp-name">Muhammad Dilawar</span>
+            <span class="fp-role">Full-Stack PHP Engineer</span>
+        </div>
+    </a>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section section" id="home">
+        <div class="hero-container">
+            <div class="profile-img-wrapper" data-aos="zoom-in" onclick="document.getElementById('profileUploadInput').click()" title="Click to change or update profile photo">
+                <div class="profile-img-ring ring-1"></div>
+                <div class="profile-img-ring ring-2"></div>
+                <div class="profile-img-glow"></div>
+                <img src="1786286796816.png" data-fallback="https://adveie.com/uploads/profile/dilawar.jpg" alt="Muhammad Dilawar" class="profile-img hero-size user-profile-photo" loading="eager">
+                <div class="status-badge">
+                    <span class="status-dot"></span> Available for Projects
+                </div>
+            </div>
+
+            <div class="luxury-pill" data-aos="fade-up">
+                <i class="fas fa-crown"></i> CUSTOM .PHP ARCHITECTURE • SAAS • FULL-STACK ENGINEERING
+            </div>
+
+            <h1 class="hero-name" data-aos="fade-up">Muhammad <span class="highlight">Dilawar</span></h1>
+            <p class="hero-title" data-aos="fade-up">Full-Stack PHP Web Developer • Software Engineer • MySQL & Automation Architect</p>
+            <div class="hero-typing" id="typing-text"></div>
+
+            <p class="hero-summary" data-aos="fade-up">
+                Engineering fast, secure, and conversion-focused web applications from the ground up without bloated templates. Specializing in <strong style="color:var(--gold-bright);">Custom Core & OOP PHP Architecture</strong>, <strong style="color:var(--cyan);">MySQL Database Design</strong>, <strong style="color:var(--emerald);">Vanilla JavaScript (ES6+) & Modern UI/UX</strong>, <strong style="color:var(--purple);">Python / Google Apps Script Automation</strong>, and seamless <strong style="color:var(--orange);">cPanel Cloud Deployment</strong>.
+            </p>
+
+            <div class="hero-buttons" data-aos="fade-up">
+                <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> Explore Live Platforms</a>
+                <a href="https://wa.me/923309233029" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp (+92 330 9233029)</a>
+                <a href="https://github.com/mdhdilawar-star" target="_blank" class="btn"><i class="fab fa-github"></i> GitHub (mdhdilawar-star)</a>
+                <a href="#proposals" class="btn"><i class="fas fa-file-signature"></i> Client Proposals</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED LIVE PROJECTS SECTION -->
+    <section class="section" id="projects">
+        <span class="section-label" data-aos="fade-up"><i class="fas fa-bolt"></i> Live Portfolio</span>
+        <h2 class="section-title" data-aos="fade-up">Featured Live <span class="title-accent">Platforms & Ecosystems</span></h2>
+        <p style="color:var(--text-secondary);max-width:760px;margin-bottom:40px;" data-aos="fade-up">
+            Every platform below is custom-architected, designed, and deployed from scratch using clean <code>.php</code> backend routing, optimized MySQL schemas, and responsive mobile-first frontends.
+        </p>
+
+        <div class="projects-grid" data-aos="fade-up">
+            <!-- 1. Adveie -->
+            <a href="https://adveie.com" target="_blank" class="glass-card project-card">
+                <div>
+                    <div class="project-top">
+                        <div class="clay-icon" style="width:58px;height:58px;font-size:1.6rem;"><i class="fas fa-network-wired"></i></div>
+                        <span class="project-badge">Flagship Ecosystem</span>
+                    </div>
+                    <h3 class="project-title">1. Adveie — Core Digital & Tech Ecosystem</h3>
+                    <div class="project-url"><i class="fas fa-external-link-alt"></i> https://adveie.com</div>
+                    <p class="project-desc">The flagship digital portal featuring custom PHP backend routing, high-speed asset delivery, modern responsive layout, and multi-project sub-domain integration.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="project-tag">Custom PHP</span>
+                    <span class="project-tag">Multi-Subdomain Routing</span>
+                    <span class="project-tag">Cloud cPanel</span>
+                </div>
+            </a>
+
+            <!-- 2. PakistanMart -->
+            <a href="https://pakistanmart.adveie.com" target="_blank" class="glass-card project-card">
+                <div>
+                    <div class="project-top">
+                        <div class="clay-icon" style="width:58px;height:58px;font-size:1.6rem;"><i class="fas fa-shopping-bag"></i></div>
+                        <span class="project-badge">Multi-Vendor Marketplace</span>
+                    </div>
+                    <h3 class="project-title">2. PakistanMart — Multi-Vendor E-Commerce Hub</h3>
+                    <div class="project-url"><i class="fas fa-external-link-alt"></i> https://pakistanmart.adveie.com</div>
+                    <p class="project-desc">A scalable multi-vendor online marketplace platform engineered for Pakistan, featuring dynamic product catalogs, vendor management workflows, and conversion-focused checkout UI.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="project-tag">PHP & MySQL</span>
+                    <span class="project-tag">E-Commerce Architecture</span>
+                    <span class="project-tag">Responsive UI</span>
+                </div>
+            </a>
+
+            <!-- 3. Online Free Tools -->
+            <a href="https://onlinefreetools.adveie.com/tools.html" target="_blank" class="glass-card project-card">
+                <div>
+                    <div class="project-top">
+                        <div class="clay-icon" style="width:58px;height:58px;font-size:1.6rem;"><i class="fas fa-toolbox"></i></div>
+                        <span class="project-badge">Web Utility & SaaS</span>
+                    </div>
+                    <h3 class="project-title">3. Online Free Tools — Web Utility & SaaS Suite</h3>
+                    <div class="project-url"><i class="fas fa-external-link-alt"></i> https://onlinefreetools.adveie.com/tools.html</div>
+                    <p class="project-desc">A multi-tool web utility platform built with asynchronous JavaScript processing and custom backend handlers, engineered for instant real-time browser execution and zero-latency UX.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="project-tag">Async ES6+ JS</span>
+                    <span class="project-tag">PHP Handlers</span>
+                    <span class="project-tag">Zero-Latency SaaS</span>
+                </div>
+            </a>
+
+            <!-- 4. Open Learning LMS -->
+            <a href="https://openlearninglms.adveie.com/" target="_blank" class="glass-card project-card">
+                <div>
+                    <div class="project-top">
+                        <div class="clay-icon" style="width:58px;height:58px;font-size:1.6rem;"><i class="fas fa-user-graduate"></i></div>
+                        <span class="project-badge">EdTech & LMS Portal</span>
+                    </div>
+                    <h3 class="project-title">4. Open Learning LMS — Custom Learning System</h3>
+                    <div class="project-url"><i class="fas fa-external-link-alt"></i> https://openlearninglms.adveie.com/</div>
+                    <p class="project-desc">A comprehensive EdTech and course management portal built on custom PHP and MySQL. Features structured student/instructor workflows, dynamic course modules, and an intuitive dashboard UI.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="project-tag">Custom LMS</span>
+                    <span class="project-tag">MySQL Schema</span>
+                    <span class="project-tag">Role-Based Auth</span>
+                </div>
+            </a>
+
+            <!-- 5. Natural Juice Vehari -->
+            <a href="https://naturaljuicevehari.site.je/?i=1" target="_blank" class="glass-card project-card">
+                <div>
+                    <div class="project-top">
+                        <div class="clay-icon" style="width:58px;height:58px;font-size:1.6rem;"><i class="fas fa-wine-glass-alt"></i></div>
+                        <span class="project-badge">Brand & Digital Ordering</span>
+                    </div>
+                    <h3 class="project-title">5. Natural Juice Vehari — E-Commerce Portal</h3>
+                    <div class="project-url"><i class="fas fa-external-link-alt"></i> https://naturaljuicevehari.site.je/?i=1</div>
+                    <p class="project-desc">A vibrant, mobile-first product showcase and digital ordering platform designed for high local customer conversion, fast mobile rendering, and clean product categorization.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="project-tag">Mobile-First UI</span>
+                    <span class="project-tag">Fast Ordering Flow</span>
+                    <span class="project-tag">Conversion SEO</span>
+                </div>
+            </a>
+
+            <!-- 6. Sarmad Cabs Drive -->
+            <a href="https://sarmadcabsdrive.site.je/" target="_blank" class="glass-card project-card">
+                <div>
+                    <div class="project-top">
+                        <div class="clay-icon" style="width:58px;height:58px;font-size:1.6rem;"><i class="fas fa-taxi"></i></div>
+                        <span class="project-badge">Booking & Fleet System</span>
+                    </div>
+                    <h3 class="project-title">6. Sarmad Cabs Drive — Fleet Dispatch Platform</h3>
+                    <div class="project-url"><i class="fas fa-external-link-alt"></i> https://sarmadcabsdrive.site.je/</div>
+                    <p class="project-desc">A custom service booking and transport management website featuring interactive ride inquiry flows, responsive service listings, and direct customer-to-driver lead generation.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="project-tag">Ride Booking Flow</span>
+                    <span class="project-tag">Lead Generation</span>
+                    <span class="project-tag">Custom PHP</span>
+                </div>
+            </a>
+
+            <!-- 7. Vehari Mart -->
+            <a href="https://veharimart.adveie.com/" target="_blank" class="glass-card project-card">
+                <div>
+                    <div class="project-top">
+                        <div class="clay-icon" style="width:58px;height:58px;font-size:1.6rem;"><i class="fas fa-store"></i></div>
+                        <span class="project-badge">Regional Commerce</span>
+                    </div>
+                    <h3 class="project-title">7. Vehari Mart — Digital Storefront & Portfolio Hub</h3>
+                    <div class="project-url"><i class="fas fa-external-link-alt"></i> https://veharimart.adveie.com/</div>
+                    <p class="project-desc">Regional commerce platform and developer portfolio showcase engineered with lightweight assets, custom PHP architecture, and rapid page-load performance.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="project-tag">Custom Storefront</span>
+                    <span class="project-tag">SEO Ready</span>
+                    <span class="project-tag">High Speed</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- WHY WORK WITH ME CARDS -->
+        <div class="why-grid" data-aos="fade-up">
+            <div class="glass-card">
+                <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px;">
+                    <div class="clay-icon" style="width:50px;height:50px;font-size:1.3rem;"><i class="fas fa-terminal"></i></div>
+                    <h3 style="font-family:var(--font-display);color:var(--gold-bright);font-size:1.15rem;">100% Custom Code</h3>
+                </div>
+                <p style="color:var(--text-secondary);font-size:0.9rem;">Zero bloated builders—every <code>.php</code> file, database table, and stylesheet is clean, documented, and engineered to scale effortlessly.</p>
+            </div>
+            <div class="glass-card">
+                <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px;">
+                    <div class="clay-icon" style="width:50px;height:50px;font-size:1.3rem;"><i class="fas fa-tachometer-alt"></i></div>
+                    <h3 style="font-family:var(--font-display);color:var(--cyan);font-size:1.15rem;">Speed & SEO Ready</h3>
+                </div>
+                <p style="color:var(--text-secondary);font-size:0.9rem;">Built with semantic HTML5 markup and lightweight assets so your platform ranks higher on Google and loads in milliseconds.</p>
+            </div>
+            <div class="glass-card">
+                <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px;">
+                    <div class="clay-icon" style="width:50px;height:50px;font-size:1.3rem;"><i class="fas fa-server"></i></div>
+                    <h3 style="font-family:var(--font-display);color:var(--emerald);font-size:1.15rem;">End-to-End Delivery</h3>
+                </div>
+                <p style="color:var(--text-secondary);font-size:0.9rem;">From MySQL database schema design to live cPanel server deployment, SSL security, and post-launch support—I handle the entire lifecycle.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE TECHNICAL EXPERTISE SECTION -->
+    <section class="section" id="skills">
+        <span class="section-label" data-aos="fade-up"><i class="fas fa-microchip"></i> Core Technical Expertise</span>
+        <h2 class="section-title" data-aos="fade-up">Full-Stack & Data <span class="title-accent">Engineering Arsenal</span></h2>
+
+        <div class="skills-grid" data-aos="fade-up">
+            <!-- Backend Engineering -->
+            <div class="glass-card">
+                <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px;">
+                    <div class="clay-icon" style="width:55px;height:55px;font-size:1.5rem;"><i class="fab fa-php"></i></div>
+                    <h3 style="color:var(--white);font-family:var(--font-display);">Backend Engineering</h3>
+                </div>
+                <p class="skill-experience-note">Custom Core PHP (7.4 / 8.x), OOP PHP, RESTful API Integration, Session & Auth Security, and Cron Job Automation built for rock-solid reliability.</p>
+                <div class="skill-item"><div class="skill-header"><span>Custom Core & OOP PHP (7.4 / 8.x)</span><span>95%</span></div><div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></div>
+                <div class="skill-item"><div class="skill-header"><span>RESTful APIs & Auth Security</span><span>92%</span></div><div class="skill-bar"><div class="skill-fill" data-width="92"></div></div></div>
+                <div class="skill-item"><div class="skill-header"><span>Cron Jobs & Server Scripting</span><span>90%</span></div><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+            </div>
+
+            <!-- Frontend & UI/UX -->
+            <div class="glass-card">
+                <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px;">
+                    <div class="clay-icon" style="width:55px;height:55px;font-size:1.5rem;"><i class="fas fa-layer-group"></i></div>
+                    <h3 style="color:var(--white);font-family:var(--font-display);">Frontend & Luxury UI/UX</h3>
+                </div>
+                <p class="skill-experience-note">Semantic HTML5, Modern CSS3 (Glassmorphism, Grid/Flexbox, Mobile-First Responsive Design), Vanilla JavaScript (ES6+), and asynchronous AJAX / Fetch API workflows.</p>
+                <div class="skill-item"><div class="skill-header"><span>HTML5, Modern CSS3 & Glassmorphism</span><span>96%</span></div><div class="skill-bar"><div class="skill-fill" data-width="96"></div></div></div>
+                <div class="skill-item"><div class="skill-header"><span>Vanilla JavaScript (ES6+) & Fetch API</span><span>91%</span></div><div class="skill-bar"><div class="skill-fill" data-width="91"></div></div></div>
+                <div class="skill-item"><div class="skill-header"><span>Mobile-First Conversion Design</span><span>94%</span></div><div class="skill-bar"><div class="skill-fill" data-width="94"></div></div></div>
+            </div>
+
+            <!-- Database, Cloud & Automation -->
+            <div class="glass-card">
+                <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px;">
+                    <div class="clay-icon" style="width:55px;height:55px;font-size:1.5rem;"><i class="fas fa-database"></i></div>
+                    <h3 style="color:var(--white);font-family:var(--font-display);">Database, Hosting & Automation</h3>
+                </div>
+                <p class="skill-experience-note">MySQL / MariaDB Architecture, Query Optimization, cPanel / WHM Server Management, SSL, DNS, Python Scripting, Custom Browser Extensions, and SEO/SEM Optimization.</p>
+                <div class="skill-item"><div class="skill-header"><span>MySQL / MariaDB & Query Optimization</span><span>94%</span></div><div class="skill-bar"><div class="skill-fill" data-width="94"></div></div></div>
+                <div class="skill-item"><div class="skill-header"><span>cPanel / WHM, DNS & SSL Deployment</span><span>95%</span></div><div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></div>
+                <div class="skill-item"><div class="skill-header"><span>Python, Browser Extensions & Google Apps Script</span><span>89%</span></div><div class="skill-bar"><div class="skill-fill" data-width="89"></div></div></div>
+            </div>
+
+            <!-- Enterprise Excel & Data Systems -->
+            <div class="glass-card">
+                <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px;">
+                    <div class="clay-icon" style="width:55px;height:55px;font-size:1.5rem;"><i class="fas fa-chart-pie"></i></div>
+                    <h3 style="color:var(--white);font-family:var(--font-display);">Enterprise Excel & Data Systems</h3>
+                </div>
+                <p class="skill-experience-note">10+ years of experience in advanced Excel automation, VLOOKUP/XLOOKUP, Pivot Tables, Macros, large-scale institutional database management, and QA.</p>
+                <div class="skill-item"><div class="skill-header"><span>Advanced Excel Automation & Formulas</span><span>98%</span></div><div class="skill-bar"><div class="skill-fill" data-width="98"></div></div></div>
+                <div class="skill-item"><div class="skill-header"><span>Excel Backend & Dashboard Systems</span><span>94%</span></div><div class="skill-bar"><div class="skill-fill" data-width="94"></div></div></div>
+                <div class="skill-item"><div class="skill-header"><span>High-Volume Data Management & QA</span><span>97%</span></div><div class="skill-bar"><div class="skill-fill" data-width="97"></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXECUTIVE PROPOSALS & INSTANT PITCH SECTION -->
+    <section class="section" id="proposals">
+        <span class="section-label" data-aos="fade-up"><i class="fas fa-handshake"></i> Client Pitch Hub</span>
+        <h2 class="section-title" data-aos="fade-up">Executive Proposals & <span class="title-accent">Instant Bidding Pitch</span></h2>
+        <p style="color:var(--text-secondary);max-width:780px;margin-bottom:28px;" data-aos="fade-up">
+            Ready-to-send proposals tailored for direct enterprise clients, agencies, Upwork, Fiverr, LinkedIn, and WhatsApp. Click <strong>Copy Text</strong> to copy instantly.
+        </p>
+
+        <div class="proposal-tabs" data-aos="fade-up">
+            <button class="tab-btn active" onclick="switchProposalTab('v1', this)">
+                <i class="fas fa-briefcase"></i> Version 1: Complete Executive Proposal
+            </button>
+            <button class="tab-btn" onclick="switchProposalTab('v2', this)">
+                <i class="fas fa-bolt"></i> Version 2: Short & Punchy Pitch (Upwork / WhatsApp)
+            </button>
+        </div>
+
+        <!-- Version 1 -->
+        <div id="proposal-v1" class="proposal-panel active glass-card" data-aos="fade-up">
+            <div class="proposal-actions">
+                <div>
+                    <h3 style="font-family:var(--font-display);color:var(--gold-bright);font-size:1.2rem;">Version 1: Complete Web Development Proposal & Portfolio</h3>
+                    <span style="font-size:0.8rem;color:var(--text-muted);">Ideal for Direct Clients, Companies, and Agencies</span>
+                </div>
+                <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                    <button class="btn btn-primary" onclick="copyProposalText('v1-text', this)" style="padding:10px 22px;font-size:0.82rem;">
+                        <i class="fas fa-copy"></i> Copy Proposal
+                    </button>
+                </div>
+            </div>
+            <div class="proposal-box" id="v1-text">Subject: Custom Full-Stack PHP Web Development Proposal & Live Portfolio — Muhammad Dilawar
+
+Dear Hiring Manager / Client,
+
+If you are looking for a fast, secure, and conversion-focused web application built from the ground up without bloated templates, I can help you bring your project to life. I am Muhammad Dilawar, a Full-Stack Web Developer and Software Engineer specializing in Custom PHP Architecture, MySQL database design, vanilla JavaScript (ES6+), responsive UI/UX, and seamless cPanel cloud deployment.
+
+Rather than relying on slow, pre-made themes, I engineer custom .php platforms tailored to your exact business workflow—ensuring rapid page-load speeds, clean SEO structure, and rock-solid backend security.
+
+Featured Live Projects (Custom PHP & Full-Stack Architecture)
+Here is a selection of live platforms I have architected, designed, and deployed from scratch:
+
+1. Adveie — Core Digital & Tech Ecosystem
+Live URL: https://adveie.com
+Overview: The flagship digital portal featuring custom PHP backend routing, high-speed asset delivery, modern responsive layout, and multi-project sub-domain integration.
+
+2. PakistanMart — Multi-Vendor E-Commerce Marketplace
+Live URL: https://pakistanmart.adveie.com
+Overview: A full-featured multi-vendor marketplace platform engineered with custom PHP and MySQL for seamless product cataloging and vendor management.
+
+3. Online Free Tools — Web Utility & SaaS Suite
+Live URL: https://onlinefreetools.adveie.com/tools.html
+Overview: A multi-tool web utility platform built with asynchronous JavaScript processing and custom backend handlers, engineered for instant real-time browser execution and zero-latency user experience.
+
+4. Open Learning LMS — Custom Learning Management System
+Live URL: https://openlearninglms.adveie.com/
+Overview: A comprehensive EdTech and course management portal built on custom PHP and MySQL. Features structured student/instructor workflows, dynamic course modules, and an intuitive dashboard UI.
+
+5. Natural Juice Vehari — Local E-Commerce & Brand Portal
+Live URL: https://naturaljuicevehari.site.je/?i=1
+Overview: A vibrant, mobile-first product showcase and digital ordering platform designed for high local customer conversion, fast mobile rendering, and clean product categorization.
+
+6. Sarmad Cabs Drive — Cab Booking & Fleet Dispatch Platform
+Live URL: https://sarmadcabsdrive.site.je/
+Overview: A custom service booking and transport management website featuring interactive ride inquiry flows, responsive service listings, and direct customer-to-driver lead generation.
+
+Core Technical Expertise
+• Backend Engineering: Custom Core PHP (7.4 / 8.x), OOP PHP, RESTful API Integration, Session & Auth Security, Cron Job Automation.
+• Frontend & UI/UX: Semantic HTML5, Modern CSS3 (Glassmorphism, Grid/Flexbox, Mobile-First Responsive Design), Vanilla JavaScript, AJAX / Fetch API.
+• Database & Hosting: MySQL / MariaDB Architecture, Query Optimization, cPanel / WHM Server Management, SSL, DNS & Cloud Deployment.
+• Automation & Extras: Python Scripting, Custom Browser Extensions, SEO/SEM On-Page Optimization, and Automated Data Workflows.
+
+Why Work With Me?
+• 100% Custom Code: Zero bloated builders—every .php file, database table, and stylesheet is clean, documented, and easy to scale.
+• Speed & SEO Ready: Built with semantic markup and lightweight assets so your website ranks higher and loads in milliseconds.
+• End-to-End Delivery: From database schema design to live server deployment and post-launch support, I handle the entire technical lifecycle.
+
+Contact & Developer Profiles
+Name: Muhammad Dilawar
+GitHub Profile: https://github.com/mdhdilawar-star
+Portfolio Link: https://veharimart.adveie.com/portfolio/index.html
+Email: mdhdilawar@gmail.com
+Phone / WhatsApp: +92 330 9233029 / +92 328 0974547
+Location: Vehari, Punjab, Pakistan
+
+Best regards,
+Muhammad Dilawar
+Full-Stack PHP Developer & Software Engineer</div>
+        </div>
+
+        <!-- Version 2 -->
+        <div id="proposal-v2" class="proposal-panel glass-card">
+            <div class="proposal-actions">
+                <div>
+                    <h3 style="font-family:var(--font-display);color:var(--cyan);font-size:1.2rem;">Version 2: Short & Punchy Pitch</h3>
+                    <span style="font-size:0.8rem;color:var(--text-muted);">Ideal for Upwork, Fiverr, LinkedIn, or WhatsApp Instant Bidding</span>
+                </div>
+                <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                    <button class="btn btn-primary" onclick="copyProposalText('v2-text', this)" style="padding:10px 22px;font-size:0.82rem;">
+                        <i class="fas fa-copy"></i> Copy Quick Pitch
+                    </button>
+                </div>
+            </div>
+            <div class="proposal-box" id="v2-text">Hi there!
+
+I am Muhammad Dilawar, a Full-Stack Web Developer specializing in Custom PHP Websites, MySQL Databases, and Modern Responsive UI/UX. Instead of slow pre-built templates, I build fast, secure, and fully customized .php web applications tailored to your business goals.
+
+Check Out My Live Custom-Built Websites:
+• Main Digital Hub: https://adveie.com
+• Multi-Vendor Marketplace: https://pakistanmart.adveie.com
+• Web Utility SaaS Platform: https://onlinefreetools.adveie.com/tools.html
+• Custom LMS Portal: https://openlearninglms.adveie.com/
+• Food & Beverage Brand Site: https://naturaljuicevehari.site.je/?i=1
+• Cab Booking & Fleet System: https://sarmadcabsdrive.site.je/
+• Regional Mart & Portfolio: https://veharimart.adveie.com/
+
+GitHub & Code Repositories:
+• GitHub: https://github.com/mdhdilawar-star
+
+Whether you need a custom business portal, an e-commerce system, a booking platform, or a full SaaS web app, I can deliver clean, production-ready PHP code deployed directly to your server.
+
+Let's Connect:
+• WhatsApp / Call: +92 330 9233029 | +92 328 0974547
+• Email: mdhdilawar@gmail.com
+
+Let me know your project details, and we can get started right away!</div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <span class="section-label" data-aos="fade-up"><i class="fas fa-user-shield"></i> About Me</span>
+        <h2 class="section-title" data-aos="fade-up">Executive <span class="title-accent">Profile & Impact</span></h2>
+
+        <div class="glass-card" style="display:flex;align-items:center;gap:38px;flex-wrap:wrap;margin-bottom:40px;" data-aos="fade-up">
+            <div class="profile-img-wrapper" onclick="document.getElementById('profileUploadInput').click()">
+                <div class="profile-img-ring ring-1"></div>
+                <div class="profile-img-ring ring-2"></div>
+                <div class="profile-img-glow"></div>
+                <img src="1786286796816.png" data-fallback="https://adveie.com/uploads/profile/dilawar.jpg" alt="Muhammad Dilawar" class="profile-img about-size user-profile-photo" loading="lazy">
+            </div>
+            <div style="flex:1;min-width:280px;">
+                <h3 style="font-family:var(--font-display);font-size:1.5rem;color:var(--white);margin-bottom:12px;">
+                    Architecting Custom PHP Ecosystems & High-Precision Data Workflows
+                </h3>
+                <p style="color:var(--text-secondary);line-height:1.85;margin-bottom:14px;">
+                    With a <strong>BS in Computer Science</strong> from the University of Education, Lahore, and <strong>10+ years of hands-on industry experience</strong>, I bridge the gap between full-stack software engineering and enterprise-grade data automation.
+                </p>
+                <p style="color:var(--text-secondary);line-height:1.85;">
+                    Whether building multi-vendor marketplaces like <strong>PakistanMart</strong>, SaaS utility suites like <strong>Online Free Tools</strong>, custom LMS platforms, or automating institutional databases with Excel & Google Apps Script, every solution is engineered for speed, security, and measurable business growth.
+                </p>
+            </div>
+        </div>
+
+        <div class="stats-grid" data-aos="fade-up">
+            <div class="stat-card">
+                <div style="font-size:1.8rem;margin-bottom:8px;">💼</div>
+                <div class="stat-number" data-count="10">0</div>
+                <div style="color:var(--text-secondary);font-size:0.9rem;font-weight:600;">+ Years Experience</div>
+            </div>
+            <div class="stat-card">
+                <div style="font-size:1.8rem;margin-bottom:8px;">🚀</div>
+                <div class="stat-number" data-count="7">0</div>
+                <div style="color:var(--text-secondary);font-size:0.9rem;font-weight:600;">+ Live Custom Platforms</div>
+            </div>
+            <div class="stat-card">
+                <div style="font-size:1.8rem;margin-bottom:8px;">📊</div>
+                <div class="stat-number" data-count="500">0</div>
+                <div style="color:var(--text-secondary);font-size:0.9rem;font-weight:600;">+ Projects & Surveys Automated</div>
+            </div>
+            <div class="stat-card">
+                <div style="font-size:1.8rem;margin-bottom:8px;">⚡</div>
+                <div class="stat-number" data-count="100">0</div>
+                <div style="color:var(--text-secondary);font-size:0.9rem;font-weight:600;">% Custom Clean Code</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION SECTION -->
+    <section class="section" id="experience">
+        <span class="section-label" data-aos="fade-up"><i class="fas fa-history"></i> Career & Academic Journey</span>
+        <h2 class="section-title" data-aos="fade-up">Professional <span class="title-accent">Experience & Education</span></h2>
+
+        <div class="timeline" data-aos="fade-up">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <h3>Full-Stack PHP Web Developer & SaaS Architect</h3>
+                    <p class="timeline-place">Adveie Digital Ecosystem & Global Freelance Clients</p>
+                    <span class="timeline-duration">Present • Custom PHP, MySQL, JS & Cloud Deployment</span>
+                    <ul>
+                        <li>Architected and deployed full-scale web platforms including <strong>Adveie.com</strong>, <strong>PakistanMart</strong>, <strong>Online Free Tools</strong>, <strong>Open Learning LMS</strong>, <strong>Natural Juice Vehari</strong>, and <strong>Sarmad Cabs Drive</strong>.</li>
+                        <li>Engineered custom core & OOP <code>.php</code> backends, RESTful APIs, session security, and responsive mobile-first frontends without bloated third-party themes.</li>
+                        <li>Managed end-to-end cPanel/WHM server deployments, MySQL query optimization, SSL security, and technical SEO.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <h3>Data Entry Operator / Computer Operator & Automation Specialist</h3>
+                    <p class="timeline-place">Govt. Graduate College (Women), Vehari</p>
+                    <span class="timeline-duration">10 Years Experience</span>
+                    <ul>
+                        <li>Managed and maintained large volumes of student, faculty, examination, and administrative records with 100% confidentiality and accuracy.</li>
+                        <li>Created Excel-based automation solutions using advanced formulas, Pivot Tables, VLOOKUP/XLOOKUP, conditional formatting, and data validation.</li>
+                        <li>Processed and analyzed 500+ survey responses and digitized legacy institutional records into structured digital formats.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <h3>District Data Entry Operator</h3>
+                    <p class="timeline-place">Deputy Director Colleges, District Vehari</p>
+                    <span class="timeline-duration">1 Year Experience</span>
+                    <ul>
+                        <li>Managed district-level student, faculty, and institutional databases across multiple colleges.</li>
+                        <li>Prepared statistical reports, executive summaries, and consolidated official documentation using Excel and Google Sheets.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <h3>BS in Computer Science</h3>
+                    <p class="timeline-place">University of Education, Lahore</p>
+                    <span class="timeline-duration">2019 – 2023 • Academic Degree</span>
+                    <ul>
+                        <li>Specialized in Software Engineering, Database Management Systems, Web Technologies, Algorithms, and Object-Oriented Programming.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact">
+        <span class="section-label" data-aos="fade-up"><i class="fas fa-paper-plane"></i> Direct Contact</span>
+        <h2 class="section-title" data-aos="fade-up">Let's Build Your <span class="title-accent">Next Platform</span></h2>
+
+        <div style="display:flex;align-items:center;justify-content:center;margin-bottom:40px;" data-aos="fade-up">
+            <div class="profile-img-wrapper" onclick="document.getElementById('profileUploadInput').click()">
+                <div class="profile-img-ring ring-1"></div>
+                <div class="profile-img-ring ring-2"></div>
+                <div class="profile-img-glow"></div>
+                <img src="1786286796816.png" data-fallback="https://adveie.com/uploads/profile/dilawar.jpg" alt="Muhammad Dilawar" class="profile-img contact-size user-profile-photo" loading="lazy">
+            </div>
+        </div>
+
+        <div class="contact-grid" data-aos="fade-up">
+            <a href="https://wa.me/923309233029" target="_blank" class="glass-card contact-card">
+                <div class="icon-wrap"><i class="fab fa-whatsapp"></i></div>
+                <div>
+                    <strong style="color:var(--white);">WhatsApp / Call (Primary)</strong><br>
+                    <span style="color:var(--gold-bright);font-size:0.85rem;font-family:var(--font-mono);">+92 330 9233029</span>
+                </div>
+            </a>
+
+            <a href="tel:+923280974547" class="glass-card contact-card">
+                <div class="icon-wrap"><i class="fas fa-phone-alt"></i></div>
+                <div>
+                    <strong style="color:var(--white);">Phone / WhatsApp 2</strong><br>
+                    <span style="color:var(--cyan);font-size:0.85rem;font-family:var(--font-mono);">+92 328 0974547</span>
+                </div>
+            </a>
+
+            <a href="mailto:mdhdilawar@gmail.com" class="glass-card contact-card">
+                <div class="icon-wrap"><i class="fas fa-envelope"></i></div>
+                <div>
+                    <strong style="color:var(--white);">Primary Email</strong><br>
+                    <span style="color:var(--text-secondary);font-size:0.83rem;">mdhdilawar@gmail.com</span>
+                </div>
+            </a>
+
+            <a href="mailto:mdhdilawardeo@gmail.com" class="glass-card contact-card">
+                <div class="icon-wrap"><i class="fas fa-envelope-open-text"></i></div>
+                <div>
+                    <strong style="color:var(--white);">Official Data Email</strong><br>
+                    <span style="color:var(--text-secondary);font-size:0.83rem;">mdhdilawardeo@gmail.com</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/mdhdilawar-star" target="_blank" class="glass-card contact-card">
+                <div class="icon-wrap"><i class="fab fa-github"></i></div>
+                <div>
+                    <strong style="color:var(--white);">GitHub Profile</strong><br>
+                    <span style="color:var(--text-secondary);font-size:0.83rem;">github.com/mdhdilawar-star</span>
+                </div>
+            </a>
+
+            <a href="https://veharimart.adveie.com/portfolio/index.html" target="_blank" class="glass-card contact-card">
+                <div class="icon-wrap"><i class="fas fa-globe"></i></div>
+                <div>
+                    <strong style="color:var(--white);">Official Live Portfolio</strong><br>
+                    <span style="color:var(--text-secondary);font-size:0.8rem;">veharimart.adveie.com/portfolio</span>
+                </div>
+            </a>
+
+            <a href="https://linkedin.com/in/muhammad-dilawar" target="_blank" class="glass-card contact-card">
+                <div class="icon-wrap"><i class="fab fa-linkedin-in"></i></div>
+                <div>
+                    <strong style="color:var(--white);">LinkedIn</strong><br>
+                    <span style="color:var(--text-secondary);font-size:0.83rem;">linkedin.com/in/muhammad-dilawar</span>
+                </div>
+            </a>
+
+            <div class="glass-card contact-card">
+                <div class="icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                    <strong style="color:var(--white);">Location</strong><br>
+                    <span style="color:var(--text-secondary);font-size:0.83rem;">Vehari, Punjab, Pakistan</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://github.com/mdhdilawar-star" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/923309233029" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://linkedin.com/in/muhammad-dilawar" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:mdhdilawar@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://adveie.com" target="_blank" title="Adveie"><i class="fas fa-globe"></i></a>
+            <a href="https://pakistanmart.adveie.com" target="_blank" title="PakistanMart"><i class="fas fa-shopping-bag"></i></a>
+        </div>
+        <p style="color:var(--text-muted);font-size:0.86rem;">
+            &copy; <span id="current-year"></span> <strong style="color:var(--gold-bright);">Muhammad Dilawar</strong> — Full-Stack PHP Developer & Software Engineer. All rights reserved.
+        </p>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <script>
+        // PROPOSAL TAB SWITCHER & ONE-CLICK COPY
+        function switchProposalTab(version, btn) {
+            document.querySelectorAll('.proposal-panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('proposal-' + version).classList.add('active');
+            btn.classList.add('active');
+        }
+
+        function copyProposalText(elementId, btn) {
+            const text = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                const orig = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i> Copied to Clipboard!';
+                setTimeout(() => { btn.innerHTML = orig; }, 2200);
+            });
+        }
+
+        (function() {
+            // LOADER
+            const loader = document.getElementById('loader');
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    loader.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }, 1400);
+            });
+
+            // PROFILE PHOTO SMART LOADER & PERSISTENT BROWSER SAVER
+            const profileImages = document.querySelectorAll('.user-profile-photo');
+            const savedPhoto = localStorage.getItem('dilawar_luxury_profile_img');
+
+            profileImages.forEach(img => {
+                if (savedPhoto) {
+                    img.src = savedPhoto;
+                }
+                img.addEventListener('error', function() {
+                    const fallback = this.getAttribute('data-fallback');
+                    if (fallback && this.src !== fallback) {
+                        this.src = fallback;
+                    }
+                });
+            });
+
+            document.getElementById('profileUploadInput').addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = function(ev) {
+                    const dataUrl = ev.target.result;
+                    try {
+                        localStorage.setItem('dilawar_luxury_profile_img', dataUrl);
+                    } catch (err) {}
+                    profileImages.forEach(img => { img.src = dataUrl; });
+                };
+                reader.readAsDataURL(file);
+            });
+
+            // THREE.JS LUXURY 3D PARTICLE GALAXY
+            const canvas = document.getElementById('three-bg');
+            const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
+            camera.position.z = 30;
+
+            const particlesGeo = new THREE.BufferGeometry();
+            const particleCount = 950;
+            const positions = new Float32Array(particleCount * 3);
+            const colors = new Float32Array(particleCount * 3);
+
+            for (let i = 0; i < particleCount; i++) {
+                positions[i * 3] = (Math.random() - 0.5) * 60;
+                positions[i * 3 + 1] = (Math.random() - 0.5) * 44;
+                positions[i * 3 + 2] = (Math.random() - 0.5) * 34;
+                const c = Math.random();
+                if (c < 0.35) {
+                    colors[i * 3] = 0.94; colors[i * 3 + 1] = 0.78; colors[i * 3 + 2] = 0.31; // Gold
+                } else if (c < 0.65) {
+                    colors[i * 3] = 0.02; colors[i * 3 + 1] = 0.71; colors[i * 3 + 2] = 0.83; // Cyan
+                } else if (c < 0.85) {
+                    colors[i * 3] = 0.55; colors[i * 3 + 1] = 0.36; colors[i * 3 + 2] = 0.96; // Purple
+                } else {
+                    colors[i * 3] = 0.06; colors[i * 3 + 1] = 0.73; colors[i * 3 + 2] = 0.51; // Emerald
+                }
+            }
+            particlesGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            particlesGeo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+            const particles = new THREE.Points(
+                particlesGeo,
+                new THREE.PointsMaterial({
+                    size: 0.065,
+                    vertexColors: true,
+                    blending: THREE.AdditiveBlending,
+                    depthWrite: false,
+                    transparent: true,
+                    opacity: 0.88
+                })
+            );
+            scene.add(particles);
+
+            let mouseX = 0, mouseY = 0;
+            document.addEventListener('mousemove', (e) => {
+                mouseX = (e.clientX / window.innerWidth) * 2 - 1;
+                mouseY = -(e.clientY / window.innerHeight) * 2 + 1;
+            });
+
+            function animate3D() {
+                requestAnimationFrame(animate3D);
+                particles.rotation.y += 0.00035;
+                particles.position.x += (mouseX * 2.2 - particles.position.x) * 0.02;
+                particles.position.y += (mouseY * 2.2 - particles.position.y) * 0.02;
+                renderer.render(scene, camera);
+            }
+            animate3D();
+
+            window.addEventListener('resize', () => {
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+            });
+
+            // LIGHTNING STORM & SHARD EFFECT ON CLICK
+            document.addEventListener('click', function(e) {
+                const flash = document.createElement('div');
+                flash.className = 'lightning-flash';
+                document.body.appendChild(flash);
+                setTimeout(() => flash.remove(), 400);
+
+                const bolt = document.createElement('div');
+                bolt.className = 'lightning-bolt';
+                bolt.style.left = (e.clientX - 1.5) + 'px';
+                bolt.style.top = Math.max(0, e.clientY - 90) + 'px';
+                bolt.style.height = (90 + Math.random() * 120) + 'px';
+                bolt.style.transform = `rotate(${(Math.random() - 0.5) * 28}deg)`;
+                document.body.appendChild(bolt);
+                setTimeout(() => bolt.remove(), 450);
+            });
+
+            document.querySelectorAll('.btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const container = document.createElement('div');
+                    container.className = 'glass-shards-container';
+                    container.style.left = e.clientX + 'px';
+                    container.style.top = e.clientY + 'px';
+                    document.body.appendChild(container);
+                    for (let i = 0; i < 18; i++) {
+                        const shard = document.createElement('div');
+                        shard.className = 'shard-piece';
+                        const angle = Math.random() * Math.PI * 2;
+                        const distance = 35 + Math.random() * 75;
+                        shard.style.setProperty('--sx', Math.cos(angle) * distance + 'px');
+                        shard.style.setProperty('--sy', Math.sin(angle) * distance + 'px');
+                        shard.style.setProperty('--sr', (Math.random() * 720 - 360) + 'deg');
+                        shard.style.width = (5 + Math.random() * 10) + 'px';
+                        shard.style.height = (5 + Math.random() * 10) + 'px';
+                        container.appendChild(shard);
+                    }
+                    setTimeout(() => container.remove(), 800);
+                });
+            });
+
+            // AOS & TYPED.JS INITIALIZATION
+            AOS.init({ duration: 900, easing: 'ease-out-cubic', once: true, offset: 90 });
+
+            new Typed('#typing-text', {
+                strings: [
+                    'Custom Full-Stack .PHP Architecture & MySQL Design',
+                    'Creator of Adveie.com, PakistanMart & Online Free Tools',
+                    'Custom LMS, E-Commerce & Fleet Booking Systems',
+                    'Vanilla JavaScript (ES6+), Glassmorphism UI & SEO Ready',
+                    'Python Automation, Browser Extensions & Google Apps Script',
+                    '10+ Years Experience in Enterprise Excel & Data Systems'
+                ],
+                typeSpeed: 42,
+                backSpeed: 22,
+                backDelay: 2200,
+                startDelay: 500,
+                loop: true,
+                showCursor: true,
+                cursorChar: '▌'
+            });
+
+            // SKILL BARS & COUNTERS
+            document.querySelectorAll('.skill-fill').forEach(f => { f.style.width = '0%'; });
+            const skillObs = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.style.width = e.target.getAttribute('data-width') + '%';
+                        skillObs.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.25 });
+            document.querySelectorAll('.skill-fill').forEach(f => skillObs.observe(f));
+
+            document.querySelectorAll('.stat-number[data-count]').forEach(el => {
+                const obs = new IntersectionObserver((entries) => {
+                    entries.forEach(e => {
+                        if (e.isIntersecting) {
+                            const target = parseInt(el.getAttribute('data-count'));
+                            const duration = 2000;
+                            const start = performance.now();
+                            function upd(ts) {
+                                const p = Math.min((ts - start) / duration, 1);
+                                const eased = 1 - Math.pow(1 - p, 4);
+                                el.textContent = Math.round(target * eased);
+                                if (p < 1) requestAnimationFrame(upd);
+                                else el.textContent = target;
+                            }
+                            requestAnimationFrame(upd);
+                            obs.unobserve(el);
+                        }
+                    });
+                }, { threshold: 0.35 });
+                obs.observe(el);
+            });
+
+            // NAVIGATION SCROLL SPY
+            const navbar = document.getElementById('navbar');
+            const navLinks = navbar.querySelectorAll('a');
+            const sections = [];
+            navLinks.forEach(l => {
+                const s = document.getElementById(l.getAttribute('data-section'));
+                if (s) sections.push({ id: l.getAttribute('data-section'), section: s, link: l });
+            });
+
+            function updateNav() {
+                const sy = window.scrollY + 180;
+                let aid = 'home';
+                sections.forEach(({ id, section }) => { if (section.offsetTop <= sy) aid = id; });
+                navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('data-section') === aid));
+            }
+            window.addEventListener('scroll', updateNav);
+
+            // BACK TO TOP
+            const btt = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => btt.classList.toggle('visible', window.scrollY > 700));
+            btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // 3D TILT EFFECT ON LUXURY ELEMENTS
+            if (typeof VanillaTilt !== 'undefined') {
+                VanillaTilt.init(document.querySelectorAll('.profile-img-wrapper, .project-card'), {
+                    max: 8,
+                    speed: 400,
+                    glare: true,
+                    'max-glare': 0.25
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
